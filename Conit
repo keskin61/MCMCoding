@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<HTML>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Conit</title>
+    <link rel="stylesheet" href="styleconit.css"/>
+  </head>
+  <body>    
+    <h1>Conit</h1>
+    <p id="beschreibung">
+	Conitmesse
+    </p>
+    <div id="img1">
+      <img src="conit1.jpg"/>
+    </div>
+    <div id="img2">
+      <img src="conit2.jpg"/>
+    </div>
+
+   
+
+  </body>
+</HTML>

@@ -1,5 +1,10 @@
 *{
-background-color:deepskyblue;
+font-weight:bold;
+font-family:Arial Black;
+background-color:rgb(153,217,234);
+}
+#login{
+font-size:20px;
 }
 select{
 background-color:white;
@@ -12,4 +17,21 @@ background-color:white;
 }
 #sub{
 background-color:silver;
+}
+#links {
+float:right;
+}#links a{
+font-size:16px;
+}
+#links a:hover{
+color:red;
+}
+.inpt{
+background-color:orange;
+}
+#logo{
+margin:50px;
+float:right;
+font-size:20px;
+color:green;
 }

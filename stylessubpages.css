@@ -1,0 +1,22 @@
+*{
+    font-weight:bold;
+    font-family:Arial Black;
+    background-color:rgb(153,217,234);
+}
+#beschreibung{
+    
+}
+img{
+    height:300px;
+    width:500px;
+}
+#img1{
+    float:left;   
+}
+#img2{
+    float:right;
+}
+#bcklink{
+    position: absolute;
+    top:500px;
+}

@@ -6,13 +6,19 @@ background-color:rgb(153,217,234);
 #login{
 font-size:20px;
 }
+form{
+    font-size:12px;
+}
 select{
+
 background-color:white;
 }
 option{
+ 
 background-color:white;
 }
 input{
+    font-size:12px;
 background-color:white;
 }
 #sub{

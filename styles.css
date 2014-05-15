@@ -4,6 +4,9 @@ font-weight:bold;
 font-family:Arial Black;
 background-color:rgb(153,217,234);
 }
+th{
+    color:purple;
+}
 li{
     list-style-type:none;
 }

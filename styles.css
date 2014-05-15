@@ -1,4 +1,4 @@
-﻿*{
+*{
 text-align: center;
 font-weight:bold;
 font-family:Arial Black;
@@ -64,18 +64,45 @@ color:green;
     text-align: center;
     color: white;
     background-color:blue;
+}#header_up{
+    
+    visibility:visible;
+    
+}#header_down{
+    visibility:hidden;
+    
 }
 #kostentable{
     
     text-align: center;
-    position: absolute; 
+    position: absolute;
     visibility:hidden;
     border-style:solid;
     
     margin-left:40%;
     
 }
-#teilnehmertable{
+#teilnehmertable1{
+    
+    text-align: center;
+    position: absolute;
+    visibility:hidden;
+    border-style:solid;
+
+    margin-left:40%;
+    
+}
+#teilnehmertable2{
+    
+    text-align: center;
+    position: absolute;
+    visibility:hidden;
+    border-style:solid;
+
+    margin-left:40%;
+    
+}
+#teilnehmertable3{
     
     text-align: center;
     position: absolute;

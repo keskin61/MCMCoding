@@ -26,7 +26,11 @@ function KostenTable(rows, cols){
         for(var i=0;i<content.length;i++){
 			document.write("<tr>");
             for(var j=0;j<content[i].length;j++){
-                document.write("<td>"+content[i][j]+"</td>");
+                if(i===0){
+			document.write("<th>"+content[i][j]+"</th>");
+		}else{
+			document.write("<td>"+content[i][j]+"</td>");
+		}
             }
             document.write("</tr>");
         }
@@ -70,7 +74,11 @@ function TeilnehmerTable1(rows, cols){
 		for(var i=0;i<content.length;i++){
 			document.write("<tr>");
             for(var j=0;j<content[i].length;j++){
-				document.write("<td>"+content[i][j]+"</td>");
+		if(i===0){
+			document.write("<th>"+content[i][j]+"</th>");
+		}else{
+			document.write("<td>"+content[i][j]+"</td>");
+		}
             }
             document.write("</tr>");
         }
@@ -114,7 +122,11 @@ function TeilnehmerTable2(rows, cols){
 		for(var i=0;i<content.length;i++){
 			document.write("<tr>");
             for(var j=0;j<content[i].length;j++){
-				document.write("<td>"+content[i][j]+"</td>");
+		if(i===0){
+			document.write("<th>"+content[i][j]+"</th>");
+		}else{
+			document.write("<td>"+content[i][j]+"</td>");
+		}
             }
             document.write("</tr>");
         }
@@ -158,7 +170,11 @@ function TeilnehmerTable3(rows, cols){
 		for(var i=0;i<content.length;i++){
 			document.write("<tr>");
             for(var j=0;j<content[i].length;j++){
-				document.write("<td>"+content[i][j]+"</td>");
+		if(i===0){
+			document.write("<th>"+content[i][j]+"</th>");
+		}else{
+			document.write("<td>"+content[i][j]+"</td>");
+		}
             }
             document.write("</tr>");
         }

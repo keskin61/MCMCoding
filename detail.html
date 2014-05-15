@@ -2,59 +2,54 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 
 <HTML>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <title>Details</title>
-    <link rel="stylesheet" href="styles.css">
-    
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Details</title>
+        <link rel="stylesheet" href="styles.css">
         <script type="text/javascript" src="detailjscript.js"></script>
+    </head>
+    <body>
+        <h1>Details zur Anmeldung</h1>
+        <div id="logo">
+        <img src="logo.jpg" alt="Logo MCMCoding">
+        </div>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <div id="container">
+            <div id="header">
+            <!-- diese div dient dazu um zwischen den beiden Tabellen umzuschalten//-->
+                <div id="header_up">
+                    <ul>
+                        <li><a id="link1" href="javascript:showkostentable()" onclick="mark1()">Kosten der Messe</a>
+                        <a id="link2" href="javascript:showteilnehmertable()" onclick="mark2()">Teilnehmer</a></li>
+                    </ul>
+                </div>
+                <div id="header_down">
+                    <ul>
+                        <li><a id="link2a" href="javascript:showteilnehmertable1()" onclick="mark2a()">Cebit</a>
+                        <a id="link2b" href="javascript:showteilnehmertable2()" onclick="mark2b()">ConHit</a>
+                        <a id="link2c" href="javascript:showteilnehmertable3()" onclick="mark2c()">WebTech Con</a></li>
+                    </ul>
+                </div>	
+            </div>
+            <div id="kostentable">
+                <script type="text/javascript">KostenTable(4,2);</script>
+            </div>
+            <div id="teilnehmertable1">
+                <script type="text/javascript">TeilnehmerTable1(4,2);</script>
+            </div>
+            <div id="teilnehmertable2">
+                <script type="text/javascript">TeilnehmerTable2(4,2);</script>
+            </div>
+            <div id="teilnehmertable3">
+                <script type="text/javascript">TeilnehmerTable3(4,2);</script>
+            </div>
+        </div>
 
-  </head>
-  <body>
-
-
-
-
-    <h1>Details zur Anmeldung</h1>
-
-    <h1 id="login">Anmeldung</h1>
-
-    <div id="logo">
-      MCMCoding
-    </div>
-
-    <div id="header">
-       <!-- diese div dient dazu um zwischen den beiden Tabellen umzuschalten//-->
-	   <div id="header_up">
-         <ul>
-           <li><a id="link1" href="javascript:showkostentable()" onclick="mark1()">Kosten der Messe</a>
-           <a id="link2" href="javascript:showteilnehmertable()" onclick="mark2()">Teilnehmer</a></li>
-         </ul>
-		</div>
-		<div id="header_down">
-          <ul>
-            <li><a id="link2a" href="javascript:showteilnehmertable1()" onclick="mark2a()">Cebit</a>
-            <a id="link2b" href="javascript:showteilnehmertable2()" onclick="mark2b()">ConHit</a>
-			<a id="link2c" href="javascript:showteilnehmertable3()" onclick="mark2c()">WebTech Con</a></li>
-          </ul>
-		</div>
-		
-    </div>
-    <div id="kostentable">
-        <script type="text/javascript">KostenTable(4,2);</script>
-    </div>
- 
-	<div id="teilnehmertable1">
-        <script type="text/javascript">TeilnehmerTable1(4,2);</script>
-    </div>
-	   <div id="teilnehmertable2">
-        <script type="text/javascript">TeilnehmerTable2(4,2);</script>
-    </div>
-	   <div id="teilnehmertable3">
-        <script type="text/javascript">TeilnehmerTable3(4,2);</script>
-    </div>
-	
-
-    <br><br><br><br><br><br><br><a href="index.html">zur&uuml;ck</a>
+  <br><br><br><br><br>
+  <br><br><br><br><br><br>
+  <hr><a href="index.html">zur&uuml;ck</a>
   </body>
 </HTML>

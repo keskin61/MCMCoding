@@ -53,7 +53,7 @@ top: 20px;
 right:50px;
 }
 #container{
-    border:solid;
+    border:none;
     width:500px;
     height:400px;
     margin:auto;
@@ -73,12 +73,11 @@ right:50px;
     color: white;
     background-color:blue;
 }#header_up{
-    
     visibility:visible;
-    
+    margin-left:-40px;
 }#header_down{
     visibility:hidden;
-    
+    margin-left:-40px;
 }
 #kostentable{
     
@@ -86,7 +85,7 @@ right:50px;
     visibility:hidden;
     border-style:solid;
     position: absolute;
-   margin:auto;
+   margin-left:50px;
     
 }
 #teilnehmertable1{
@@ -95,7 +94,7 @@ right:50px;
     visibility:hidden;
     border-style:solid;
     position: absolute;
-   margin:auto;
+   margin-left:50px;
 }
 #teilnehmertable2{
     
@@ -103,7 +102,7 @@ right:50px;
     visibility:hidden;
     border-style:solid;
 position: absolute;
-   margin:auto;
+   margin-left:50px;
 }
 #teilnehmertable3{
     
@@ -111,5 +110,5 @@ position: absolute;
     visibility:hidden;
     border-style:solid;
     position: absolute;
-   margin:auto;
+   margin-left:50px;
 }

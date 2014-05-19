@@ -6,12 +6,24 @@
         <title>Freiwillige &Uuml;bung</title>
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
         <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript" src="aufgabe2script.js"></script>
         
     </head>
     <body>
         <h1>Freiwillige &Uuml;bung</h1>
         <h2>Aufgabe 2</h2>
-
+        <div id="calc">
+            <form action="" method="get">
+                <input type="text" name="inputfield1" />
+                <input type="button" value="+" name="add" onclick="add()" />
+                <input type="button" value="-" name="sub" onclick="sub()"/>
+                <input type="button" value="*" name="mult" onclick="mult()"/>
+                <input type="button" value="/" name="divide" onclick="divide()"/>
+                <input type="text" name="inputfield2" />
+                <input type="submit" value="=" name="result" />
+                <input type="text" name="output" />
+            </form>
+        </div>
         <br><br><br><br><br><br><br><br><br><br><br><br><br>
         <div id="bcklink"><a href="frwuebung.html">zur&uuml;ck</a></div>
     </body>

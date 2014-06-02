@@ -6,7 +6,8 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>1210402//1210732//1131666</title>
     <link rel="stylesheet" href="styles.css"> 
-    <script type="text/javascript" src="jquery-2.1.1.js"></script>   
+    <script type="text/javascript" src="jquery-2.1.1.js"></script>
+    <SCRIPT type="text/javascript" src="indexscript.js"></script>
   </head>
   
     <h1>MCMCoding</h1>
@@ -29,7 +30,7 @@
         <li><a href="frwuebung.html">freiwillige Übung</a></li>
       </ul>
   </div>
-      <form action="http://martinakraus.net/hsmannheim.php" method="get">
+      <form name="myform" action="http://martinakraus.net/hsmannheim.php" onsubmit="return validateInput()" method="get" >
         <div id="inptbox1">
           <p class="formtext">Vorname:<input class="inpt" name="vorname" type="text"  maxlength="30"></p>
           <p class="formtext">Name:<input class="inpt" name="name" type="text"  maxlength="40"></p>

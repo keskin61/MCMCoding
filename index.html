@@ -30,7 +30,7 @@
         <li><a href="frwuebung.html">freiwillige Übung</a></li>
       </ul>
   </div>
-      <form name="myform" action="http://martinakraus.net/hsmannheim.php" onsubmit="return validateInput()" method="get" >
+      <form name="myform" action="http://martinakraus.net/hsmannheim.php"  method="get" >
         <div id="inptbox1">
           <p class="formtext">Vorname:<input class="inpt" name="vorname" type="text"  maxlength="30"></p>
           <p class="formtext">Name:<input class="inpt" name="name" type="text"  maxlength="40"></p>
@@ -52,7 +52,7 @@
           <input type="radio" name="messe" value="WebTech Con"> WebTech Con
         </p>
         
-        <input id="sub" type="submit" value=" Absenden ">
+        <input id="sub" type="submit" value=" Absenden " onclick="return validateInput()">
     </form>
     <hr>
   

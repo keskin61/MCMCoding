@@ -101,17 +101,24 @@ function validateInput () {
     var vorstring=document.myform.email.value.substring(0, indxAt);
     var nachstring=document.myform.email.value.substring(indxAt+1, indxPt);
     var domainstring=document.myform.email.value.substring(indxPt+1, document.myform.email.value.length);
-    console.log("vorstring:"+vorstring+","+"nachstring:"+nachstring+","+"domainstring:"+domainstring+".");
+    //console.log("vorstring:"+vorstring+","+"nachstring:"+nachstring+","+"domainstring:"+domainstring+".");
     
     var flagMail=false;
     //substrings auf ungültige zeichen überprüfen.
+    if(nachstring.charAt(0)=='.'){
+        console.log("email ungültiges Format. Punkt nach dem @Zeichen ist unzulässig.");
+        flagMail=true;
+    }
     if(domainstring=='de'||domainstring=='org'||domainstring=='net'||domainstring=='com'){
         ;
     }else{
         console.log("email ungültiges Format.-gültige domainnames: de/org/net/com");
         flagMail=true;
     }
-    
+    if(vorstring.length<=0||nachstring.length<=0){
+        console.log("email ungültiges Format. Keine Eingabe vor oder nach dem @-Zeichen gefunden.");
+        flagMail=true;
+    }
     if(flagMail){
         console.log("email ungültiges Format.");
         alert("Einige Eingaben sind fehlerhaft.Bitte überprüfen Sie ihre Eingaben");
@@ -158,19 +165,26 @@ function validateInput () {
         return false;
     }else{
         var flaghandy = false;
-        
+        var failNr=-1;
         for (i = 0; i < document.myform.handy.value.length; ++i){
             if (document.myform.handy.value.charAt(i) < "0" ||
              document.myform.handy.value.charAt(i) > "9"){
-                console.log("handynr enthält ungültige Zeichen.");
+                failNr=0;
                 flaghandy = true;
             }
              if(document.myform.handy.value.charAt(0)!=0){
-                 console.log("handynr beginnt nicht mit 0. Ungültige Eingabe.");
+                 failNr=1;
                  flaghandy = true;
              }
         }
         if (flaghandy) {
+            if(failNr==0){
+                console.log("handynr enthält ungültige Zeichen.");
+            }else if(failNr==1){
+                console.log("handynr beginnt nicht mit 0. Ungültige Eingabe.");
+            }else{
+                ;//Nichts unternehmen. Wert: -1
+            }
             alert("Einige Eingaben sind fehlerhaft.Bitte überprüfen Sie ihre Eingaben");
             document.myform.handy.focus();
             document.myform.handy.style.borderColor="red";
@@ -178,7 +192,7 @@ function validateInput () {
         }
     }
       
-
+    console.log("Validierung erfolgreich.");
     
 
 }

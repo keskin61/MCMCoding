@@ -1,11 +1,17 @@
 function validateInput () {
+    document.myform.vorname.style.borderColor="initial";
+    document.myform.name.style.borderColor="initial";
+    document.myform.email.style.borderColor="initial";
+    document.myform.matrikelnr.style.borderColor="initial";
+    document.myform.handy.style.borderColor="initial";
 
     //Validierung: Vorname.
     if (document.myform.vorname.value == "") {
-    console.log("vorname leere Eingabe.");
-    alert("Einige Eingaben sind fehlerhaft.Bitte überprüfen Sie ihre Eingaben");
-    document.myform.vorname.focus();
-    return false;
+        console.log("vorname leere Eingabe.");
+        alert("Einige Eingaben sind fehlerhaft.Bitte überprüfen Sie ihre Eingaben");
+        document.myform.vorname.focus();
+        document.myform.vorname.style.borderColor="red";
+        return false;
   }else{ //Vorname wurde eingegeben.(nicht leer).
         var flag=false;
         for (i = 0; i < document.myform.vorname.value.length; ++i){
@@ -19,6 +25,7 @@ function validateInput () {
             console.log("vorname enthält ungültige Zeichen.");
             alert("Einige Eingaben sind fehlerhaft.Bitte überprüfen Sie ihre Eingaben");
             document.myform.vorname.focus(); 
+            document.myform.vorname.style.borderColor="red";
             return false;
         }
         
@@ -28,6 +35,7 @@ function validateInput () {
     console.log("name leere Eingabe.");
     alert("Einige Eingaben sind fehlerhaft.Bitte überprüfen Sie ihre Eingaben");
     document.myform.name.focus();
+    document.myform.name.style.borderColor="red";
     return false;
   }else{ //Vorname wurde eingegeben.(nicht leer).
         var flag=false;
@@ -41,6 +49,7 @@ function validateInput () {
             console.log("name enthält ungültige Zeichen.");
             alert("Einige Eingaben sind fehlerhaft.Bitte überprüfen Sie ihre Eingaben");
             document.myform.name.focus(); 
+            document.myform.name.style.borderColor="red";
             return false;
         }
         
@@ -51,6 +60,7 @@ function validateInput () {
         console.log("email leere Eingabe.");
         alert("Einige Eingaben sind fehlerhaft.Bitte überprüfen Sie ihre Eingaben");
         document.myform.email.focus();
+        document.myform.email.style.borderColor="red";
         return false;
     }
     
@@ -67,6 +77,7 @@ function validateInput () {
         console.log("email ungültiges Format.-kein oder mehr als ein @-Zeichen");
         alert("Einige Eingaben sind fehlerhaft.Bitte überprüfen Sie ihre Eingaben");
         document.myform.email.focus();
+        document.myform.email.style.borderColor="red";
         return false;
     }
     // an dieser Stelle wurde die Position des @ zeichens gefunden.
@@ -82,6 +93,7 @@ function validateInput () {
         console.log("email ungültiges Format.-kein Punkt nach dem @-Zeichen");
         alert("Einige Eingaben sind fehlerhaft.Bitte überprüfen Sie ihre Eingaben");
         document.myform.email.focus();
+        document.myform.email.style.borderColor="red";
         return false;
     }
     
@@ -104,6 +116,7 @@ function validateInput () {
         console.log("email ungültiges Format.");
         alert("Einige Eingaben sind fehlerhaft.Bitte überprüfen Sie ihre Eingaben");
         document.myform.email.focus();
+        document.myform.email.style.borderColor="red";
         return false;
     }
 
@@ -112,6 +125,7 @@ function validateInput () {
         console.log("matrikelnr leere Eingabe.");
         alert("Einige Eingaben sind fehlerhaft.Bitte überprüfen Sie ihre Eingaben");
         document.myform.matrikelnr.focus();
+        document.myform.matrikelnr.style.borderColor="red";
         return false;
     }else{
         var flagMrtklnr = false;
@@ -130,6 +144,7 @@ function validateInput () {
         if (flagMrtklnr) {
             alert("Einige Eingaben sind fehlerhaft.Bitte überprüfen Sie ihre Eingaben");
             document.myform.matrikelnr.focus();
+            document.myform.matrikelnr.style.borderColor="red";
             return false;
         }
     }
@@ -139,6 +154,7 @@ function validateInput () {
         console.log("handy leere Eingabe.");
         alert("Einige Eingaben sind fehlerhaft.Bitte überprüfen Sie ihre Eingaben");
         document.myform.handy.focus();
+         document.myform.handy.style.borderColor="red";
         return false;
     }else{
         var flaghandy = false;
@@ -157,6 +173,7 @@ function validateInput () {
         if (flaghandy) {
             alert("Einige Eingaben sind fehlerhaft.Bitte überprüfen Sie ihre Eingaben");
             document.myform.handy.focus();
+            document.myform.handy.style.borderColor="red";
             return false;
         }
     }

@@ -72,6 +72,15 @@ function validateInput () {
             ++counter;
             indxAt=i;
         }
+        //hier auf ungültige Zeichen überprüfen
+        //Leerzeichen darf nicht auftauchen
+        if(document.myform.email.value.charAt(i)==' '){
+            console.log("email Leerzeichen nicht erlaubt.");
+            alert("Einige Eingaben sind fehlerhaft.Bitte überprüfen Sie ihre Eingaben");
+            document.myform.email.focus();
+            document.myform.email.style.borderColor="red";
+            return false;
+        }
     }
     if(indxAt==-1 || (counter != 1)){
         console.log("email ungültiges Format.-kein oder mehr als ein @-Zeichen");

@@ -8,6 +8,7 @@ table{
     border:solid 1px;
 }
 th{
+    color:purple;
     border-bottom:solid 1px;
     border-right:solid 1px;
 }
@@ -15,8 +16,8 @@ td{
     border-bottom:solid 1px;
     border-right:solid 1px;
 }
-a{
-    //border:solid 1px;
+a:link { 
+    text-decoration:none; 
 }
 ul{
     //border:solid 1px;
@@ -75,14 +76,21 @@ right:50px;
     margin:auto;
     padding:auto;
 }
-#header {
-
+#header a{
+   display: table-cell;
+   width: 500px; 
+   border: solid 1px;
+   
 }
 #header li{
-   // border-style: solid;
     
+    //border:solid 1px;
     border-color:black;
     list-style-type:none;
+}
+#header a{
+    color: black;
+    
 }
 #header a:hover{
     
@@ -90,13 +98,18 @@ right:50px;
     color: white;
     background-color:blue;
 }#header_up{
+    
     visibility:visible;
+   
     margin-left:-40px;
 }#header_down{
+    
     visibility:hidden;
     height:-30px;
+    margin-top:-16px;
     margin-left:-40px;
 }
+
 #kostentable{
     
     text-align: center;

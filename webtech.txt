@@ -1,0 +1,3 @@
+Martina Kraus, 946146, m.kraus@hs-mannheim.de, 01761123020412, IB;
+Thomas Smits, 483094, t.smits@hs-mannheim.de, 016111111111111, UIB;
+Michael Gröschel, 932485, m.groeschel@hs-mannheim.de, 0171333313, UIB;

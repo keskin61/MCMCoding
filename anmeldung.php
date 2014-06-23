@@ -18,9 +18,12 @@
             $handle = fopen($my_file, 'a') or die('Cannot open file:  '.$my_file);
             fwrite($handle, $output);
             fclose($handle);
-              
+            echo $output;
+            echo "<br>Eintrag erzeugt.";  
              
              
         ?>
+        <br>
+        <a href="index.html">zur&uuml;ck</a>
     </body>
 </html>

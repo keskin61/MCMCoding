@@ -1,1 +1,2 @@
-AAA BBB, 123, AAA@BBB.de, 0123, IB;
+a b, 321, a@b.de, 0321, IB;
+sa as, 999, sa@as.de, 0999, IB;
